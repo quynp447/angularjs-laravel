@@ -1,0 +1,31 @@
+button.submit {
+    margin-top: 50px;
+    width: 32%;
+    height: 35%;
+    background:#0069d9;
+}
+h1.section {
+    margin-top: 46px;
+    font-size: 50px;
+}
+button.button-index.ng-binding{
+    background: rgb(19, 122, 10);
+    color: white;
+}
+.table{
+    border:1px solid #777;
+    margin-top: 50px;
+}
+.table>thead>tr>th{
+    text-align: center;
+    border-right: 1px solid #777;
+
+}
+.table>tbody>tr>td{
+    text-align: center;
+    border-right: 1px solid #777;
+}
+button.button-add {
+    width: 30%;
+    height: 30%;
+}

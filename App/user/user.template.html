@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="button-index">
+                <button ng-click="usecrt.getadd()" class="button-index" type="submit">them</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" ng-controller="usercontroller">          
+    <table class="table">
+      <thead>
+        <tr class="table-title">
+          <th>id</th>  
+          <th>name</th>
+          <th>email</th>
+          <th>password</th>
+          <th><button ng-click="usecrt.add()" class="button-add" >ADD</button></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="us in usecrt.users">
+          <td>{{us.id}}</td>
+          <td>{{us.name}}</td>
+          <td>{{us.email}}</td>
+          <td>{{us.password}}</td>
+          <td>
+              <button ng-click="usecrt.show()" class="button-show" type="submit" id="show" name="show">show</button>
+              <button ng-click="usecrt.modal(us,id)" class="button-edit" type="button" id="edit"> edit</button>
+                <button ng-click="" class="button-delete" type="submit">delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

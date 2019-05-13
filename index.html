@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./App/assets/css/style.css">
+    <link href="App/assets/css/login.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<!-- <link rel="stylesheet" href="App/assets/css/login.css"> -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+    <div>
+            <ng-view></ng-view>
+
+    </div>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+
+    <script src="App/app.module.js"></script>
+    <script src="App/App.config.js"></script>
+    
+    <script src="App/shared/header/header.module.js"></script>
+    <script src="App/shared/header/header.component.js"></script>
+    <script src="App/shared/header/header.controller.js"></script>
+
+    <script src="App/shared/footer/footer.module.js"></script>
+    <script src="App/shared/footer/footer.controller.js"></script>
+    <script src="App/shared/footer/footer.component.js"></script>
+
+    <script src="App/user/user.module.js"></script>
+    <script src="App/user/user.controller.js"></script>
+    <script src="App/user/user.component.js"></script>
+
+    <script src="App/login/login.module.js"></script>
+    <script src="App/login/login.component.js"></script>
+    <script src="App/login/login.controller.js"></script>
+
+    <script src="App/add/add.module.js"></script>
+    <script src="App/add/add.component.js"></script>
+    <script src="App/add/add.controller.js"></script>
+</body>
+</html> 
