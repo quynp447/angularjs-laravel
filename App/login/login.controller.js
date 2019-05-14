@@ -22,7 +22,8 @@ angular
                 url:'http://localhost:81/public/api/edit/'+ $routeParams.id,
                 data: self.user,
             })
-            .then(function(response){   
+            .then(function(response){ 
+                alert('sua thanh cong');  
                 console.log(response);
             })
                 

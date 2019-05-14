@@ -1,6 +1,6 @@
 angular
     .module('user')
-    .controller('usercontroller', [ '$http','$location',function($http,$location){
+    .controller('usercontroller', [ '$http','$location','$routeParams',function($http,$location,$routeParams){
 
         var quy= this;
         quy.getajax=function(){
@@ -15,18 +15,26 @@ angular
         quy.getajax();  
         quy.modal = function(us){
             $location
-            .path('/edit/'+ us.id);
-            // quy.user.name=us.name;
-            // quy.user.email=us.email;
-            // quy.user.password=us.password;
+                .path('/edit/'+ us.id);
         }
+
         quy.add=function(){
             $location
                 .path('/add');
         }
+
+        quy.delete=function(id){
+            var deleteform= confirm('ban co chac chan xoa khong');
+            console.log(id);
+            if(deleteform){
+                $http   
+                    .get('http://localhost:81/public/api/delete/'+id)
+                    .then(function(response){
+                        alert('xoa thanh cong');
+                        location.reload();
+                        return $location.path('/');
+                        console.log(response);
+                    })
+            }
+        }
     }]);
-    // .then(function(us){
-    //     quy.user.name=us.name;
-    //     quy.user.email=us.email;
-    //     quy.user.password=us.password;
-    // });
